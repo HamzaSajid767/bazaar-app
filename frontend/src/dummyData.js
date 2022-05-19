@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs';
 
-const data = {
+const dummyData = {
   users: [
     {
       name: 'Hamza',
@@ -92,4 +92,4 @@ const data = {
     },
   ],
 };
-export default data;
+export default dummyData;

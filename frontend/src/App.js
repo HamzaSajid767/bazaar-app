@@ -28,7 +28,6 @@ import { listProductCategories } from './actions/productActions';
 import LoadingBox from './components/LoadingBox';
 import MessageBox from './components/MessageBox';
 import DashboardScreen from './screens/DashboardScreen';
-import SupportScreen from './screens/SupportScreen';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -130,9 +129,6 @@ function App() {
                   </li>
                   <li>
                     <Link to="/userlist">Users</Link>
-                  </li>
-                  <li>
-                    <Link to="/support">Support</Link>
                   </li>
                 </ul>
               </div>
@@ -274,14 +270,7 @@ function App() {
                 </AdminRoute>
               }
             />
-            <Route
-              path="/support"
-              element={
-                <AdminRoute>
-                  <SupportScreen />
-                </AdminRoute>
-              }
-            />
+
             <Route
               path="/productlist/seller"
               element={
